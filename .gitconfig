@@ -1,0 +1,24 @@
+[user]
+	name = cobaimelan
+	email = cobaimelan@yandex.com.tr
+[alias]
+        pb              = pull
+        p               = pull --rebase origin master
+        u               = push origin master
+        ub              = push 
+        st              = status
+        ci              = commit
+        co              = checkout
+        br              = branch
+        lg              = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        fix             = commit --amend -C HEAD
+        rv              = remote --verbose
+        r               = remote
+        staged          = diff --cached
+        unstage         = reset HEAD
+        undo-commit     = reset --soft HEAD^
+        reset-master    = reset --hard origin/master
+        reset-staging   = reset --hard origin/staging
+        tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
+[github]
+	user = cobaimelan
