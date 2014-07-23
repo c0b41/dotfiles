@@ -17,6 +17,7 @@
         staged          = diff --cached
         unstage         = reset HEAD
         undo-commit     = reset --soft HEAD^
+        reset-c         = reset HEAD^ --hard
         reset-master    = reset --hard origin/master
         reset-staging   = reset --hard origin/staging
         tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative

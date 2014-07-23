@@ -1,6 +1,6 @@
 color_off='\e[0m'
 black='\e[0;30m'
-red='\e[0;31m'
+red='\e[0;31m'as
 green='\e[0;32m'
 yellow='\e[0;33m'
 blue='\e[0;34m'
@@ -18,5 +18,12 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..' 
 
+alias lama="$HOME/bin/lama/lama.sh"
 
 --() { cd $1; }
+
+# PATHS
+
+export GOROOT=$HOME/go
+
+export PATH=$PATH:$GOROOT/bin
