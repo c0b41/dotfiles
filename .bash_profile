@@ -27,10 +27,15 @@ export LANG=tr_TR.UTF-8
 export LANGUAGE=tr_TR.UTF-8 
  
 
-export GOROOT=$HOME/
+export GOROOT="c:/Go"
 
-export PATH=$PATH:$GOROOT/bin  
+export GOPATH=$HOME/GO
 
+export GOBIN=$GOPATH/bin
 
- alias lama="$HOME/AppData/Roaming/lama/bin/lama.sh" 
+export PATH=$PATH:$GOROOT/bin:$GOBIN
+
+alias subl="/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+
+alias lama="$HOME/AppData/Roaming/lama/bin/lama.sh" 
 
