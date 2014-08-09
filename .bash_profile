@@ -36,6 +36,14 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin:$GOBIN
 
 alias subl="/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+alias atom="/c/Users/Ayhan/Atom/atom.exe"
+
 
 alias lama="$HOME/AppData/Roaming/lama/bin/lama.sh" 
 
+
+ alias lama="$HOME/AppData/Roaming/lama/bin/lama.sh" 
+
+ alias lama="$HOME/AppData/Roaming/lama/bin/lama.sh" 
+
+ alias lama="$HOME/AppData/Roaming/lama/bin/lama.sh" 
