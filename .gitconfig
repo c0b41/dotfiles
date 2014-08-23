@@ -30,5 +30,6 @@
         reset-staging   = reset --hard origin/staging
         tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
         kill-cache      = rm -r --cached .
+        psh             = push origin
 [github]
 	user = ayhankuru
