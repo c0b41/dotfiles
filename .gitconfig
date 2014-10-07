@@ -13,7 +13,7 @@
         pb              = pull
         p               = pull --rebase origin master
         u               = push origin master
-        ub              = push 
+        ub              = push
         st              = status
         ci              = commit
         co              = checkout
@@ -31,5 +31,6 @@
         tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
         kill-cache      = rm -r --cached .
         psh             = push origin
+				rb							= branch -r
 [github]
 	user = ayhankuru
