@@ -31,6 +31,7 @@
         tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
         kill-cache      = rm -r --cached .
         psh             = push origin
-		rb	        	= branch -r
+	rb	        = branch -r
+        rls             = tag -a
 [github]
 	user = ayhankuru
