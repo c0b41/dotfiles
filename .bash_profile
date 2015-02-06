@@ -1,3 +1,5 @@
+# Style
+
 color_off='\e[0m'
 black='\e[0;30m'
 red='\e[0;31m'
@@ -8,44 +10,46 @@ purple='\e[0;35m'
 cyan='\e[0;36m'
 white='\e[0;37m'
 
-export nickname="ayhankuru"
+# Sources
+
+## @usage: gh -h command list
 
 source "gh.sh"
-
-source "spark.sh"
  
+# Prompt
+
 PS1='\[\033[0;35m\]$nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "node --version")\[\033[0;30m\]] \e[0;32m$(__git_ps1)\[\033[0;30m\] \[\033[0;35m\]\n \[\033[00;34m\]\w\[\033[00m\] λ ' 
-#PS2='\[\033[01;30m\]\t `if [ $? = 0 ]; then echo "\[\033[01;32m\]ツ"; else echo "\[\033[01;31m\]✗"; fi` \[\033[00;31m\]\h\[\033[00;37m\]:\[\033[00;34m\]\w\[\033[00m\] >'
 
-alias ..='cd ..'
-alias ....='cd ../..'
-alias .....='cd ../../..'
-alias ......='cd ../../../..' 
-
-
---() { cd $1; }
-
+# Func
+##  mkdir func or open directory
 function mkdir
 {
   command mkdir $1 && cd $1
 }
 
-
+## sublime text open or open directory
 function subl
 {
   command subl $1 && cd $1
 }
+## atom editor open or open directory
+function atom
+{
+  command atom $1 && atom $1
+}
 
+## git stats 
 function gcn
 {
 	command git log --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
 }
-
+## directory list file return json list
+## @usage fln ext {html,js} > list.json
 function fln
 {
-   arr=( $(find . -type f) )
-
-    chunk="["
+   arr=( $(find . -type f -name "*.$1") )
+   echo arr
+    chunk="{list:{["
    for I in ${!arr[*]}; do
 
         if [ $((${#arr[*]} -1)) == $I ]; then
@@ -54,16 +58,17 @@ function fln
               chunk+="'${arr[$I]}'," 
         fi
   done
-  chunk+="]"
+  chunk+="]}"
 
   echo ${chunk}
 }
 
  
-
+## video convert  to gif
+## @usage gif example.mov
 function gif {
   if [ -z "$1" ]; then
-    echo "No input file given. Example: gifify example.mov [max width (pixels)]"
+    echo "No input file given. Example: gif example.mov [max width (pixels)]"
     return 1
   fi
 
@@ -84,10 +89,12 @@ function gif {
   echo "Done."
 }
 
+
+
+# Exports
 export LC_ALL=tr_TR.UTF-8 
 export LANG=tr_TR.UTF-8 
 export LANGUAGE=tr_TR.UTF-8 
- 
 
 export GOROOT="c:/Go"
 
@@ -97,7 +104,16 @@ export GOBIN=$GOPATH/bin
 
 export PATH=$PATH:$GOROOT/bin:$GOBIN
 
-alias lama="$HOME/AppData/Roaming/lama/bin/lama.sh" 
+export nickname="ayhankuru"
 
+# Alias
+
+alias ..='cd ..'
+alias ....='cd ../..'
+alias .....='cd ../../..'
+alias ......='cd ../../../..' 
 alias node='iojs'
+alias today='garden $nickname' 
+
+
  
