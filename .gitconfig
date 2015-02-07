@@ -33,5 +33,6 @@
         psh             = push origin
 	rb	        = branch -r
         rls             = tag -a
+        heroku          = push heroku master
 [github]
 	user = ayhankuru
