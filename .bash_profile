@@ -18,7 +18,7 @@ source "gh.sh"
  
 # Prompt
 
-PS1='\[\033[0;35m\]$nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "node --version")\[\033[0;30m\]] \e[0;32m$(__git_ps1)\[\033[0;30m\] \[\033[0;35m\]\n \[\033[00;34m\]\w\[\033[00m\] λ ' 
+PS1='\[\033[0;35m\]$nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --version")\[\033[0;30m\]] \e[0;32m$(__git_ps1)\[\033[0;30m\] \[\033[0;35m\]\n \[\033[00;34m\]\w\[\033[00m\] λ ' 
 
 # Func
 ##  mkdir func or open directory
@@ -113,6 +113,7 @@ alias ....='cd ../..'
 alias .....='cd ../../..'
 alias ......='cd ../../../..' 
 alias lol_joyent='node' 
+alias node='echo " type lol_joyent "' 
 alias today='garden $nickname' 
 
 
