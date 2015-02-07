@@ -112,7 +112,7 @@ alias ..='cd ..'
 alias ....='cd ../..'
 alias .....='cd ../../..'
 alias ......='cd ../../../..' 
-alias node='iojs'
+alias lol_joyent='node' 
 alias today='garden $nickname' 
 
 
