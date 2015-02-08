@@ -38,6 +38,12 @@ function atom
   command atom $1 && atom $1
 }
 
+## open folder directory
+function open
+{
+  command start $PWD/$1 && cd $1
+}
+
 ## git stats 
 function gcn
 {
@@ -115,6 +121,7 @@ alias ......='cd ../../../..'
 alias lol_joyent='node' 
 alias node='echo " type lol_joyent "' 
 alias today='garden $nickname' 
+alias server='ssh root@104.236.32.41'
 
 
  
