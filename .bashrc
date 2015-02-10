@@ -52,6 +52,19 @@ function compile
   command gcc $filename -o $1 && $exe 
 }
 
+function iotest
+{
+data="$(cat <<-EOF
+	language: node_js
+	node_js:
+	  - iojs-v1.0.2
+	EOF
+	)"
+ command echo "$data" > .travis.yml 
+
+}
+
+
 ## git stats 
 function gcn
 {
@@ -130,6 +143,3 @@ alias lol_joyent='node'
 alias node='echo " type lol_joyent "' 
 alias today='garden $nickname' 
 alias server='ssh root@104.236.32.41'
-
-
- 
