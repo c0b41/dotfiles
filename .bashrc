@@ -10,11 +10,6 @@ purple='\e[0;35m'
 cyan='\e[0;36m'
 white='\e[0;37m'
 
-# Sources
-
-## @usage: gh -h command list
-
-source "gh.sh"
  
 # Prompt
 
