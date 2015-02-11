@@ -59,9 +59,13 @@ data="$(cat <<-EOF
 	node_js:
 	  - iojs-v1.0.2
 	EOF
-	)"
+	)" 
+ datas="$(cat package.json | jq '.scripts.test="iojs node_modules/mocha/bin/mocha test.js --reporter spec --timeout 15000"')"
  command echo "$data" > .travis.yml 
-
+ command echo "$datas" > package.json
+ command git add .
+ command git commit -m "io test added"
+ command git u
 }
 
 
