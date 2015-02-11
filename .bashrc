@@ -63,6 +63,18 @@ data="$(cat <<-EOF
  command git u
 }
 
+function test
+{
+data="$(cat <<-EOF
+#!/usr/bin/env bash
+npm test
+EOF
+  )"
+  command touch .git/hooks/pre-commit
+  command echo "$data" > .git/hooks/pre-commit
+  command chmod +x .git/hooks/pre-commit
+}
+
 
 ## git stats 
 function gcn
