@@ -3,6 +3,7 @@ atom-shell@
 chromeos-apk@
 cli-github@1.0.0
 component@
+cowsay@
 dox@
 forever@
 gardening@
