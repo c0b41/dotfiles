@@ -36,3 +36,5 @@
         heroku          = push heroku master
 [github]
 	user = ayhankuru
+[core]
+	editor = vim

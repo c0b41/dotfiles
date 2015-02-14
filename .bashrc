@@ -13,7 +13,7 @@ white='\e[0;37m'
  
 # Prompt
 
-PS1='\[\033[0;35m\]$nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --version")\[\033[0;30m\]] \e[0;32m$(__git_ps1)\[\033[0;30m\] \[\033[0;35m\]\n \[\033[00;34m\]\w\[\033[00m\] λ ' 
+PS1='\[\033[0;35m\] $nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --version") \[\033[0;30m\]] \e[0;32m$(__git_ps1)\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] λ ' 
 
 # Func
 ##  mkdir func or open directory
@@ -46,7 +46,7 @@ function compile
   exe="$1.exe"
   command gcc $filename -o $1 && $exe 
 }
-
+## nodejs test replace iojs
 function iotest
 {
 data="$(cat <<-EOF
@@ -62,8 +62,8 @@ data="$(cat <<-EOF
  command git commit -m "io test added"
  command git u
 }
-
-function test
+## git test hook create
+function testhook
 {
 data="$(cat <<-EOF
 #!/usr/bin/env bash
@@ -100,7 +100,11 @@ function fln
 
   echo ${chunk}
 }
-
+## image convert to blur
+function blur
+{
+  convert ./"$1" -resize 1137 -extent 1137x640 -blur 0x4 ./"new-$1"
+}
  
 ## video convert  to gif
 ## @usage gif example.mov
@@ -149,8 +153,6 @@ export nickname="ayhankuru"
 alias ..='cd ..'
 alias ....='cd ../..'
 alias .....='cd ../../..'
-alias ......='cd ../../../..' 
-alias lol_joyent='node' 
-alias node='echo " type lol_joyent "' 
+alias ......='cd ../../../..'
 alias today='garden $nickname' 
 alias server='ssh root@104.236.32.41'
