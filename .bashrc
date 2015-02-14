@@ -14,6 +14,10 @@ white='\e[0;37m'
 # Prompt
 
 PS1='\[\033[0;35m\] $nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --version") \[\033[0;30m\]] \e[0;32m$(__git_ps1)\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] λ ' 
+## Sources
+
+source "$HOME/bashmarks/bashmarks.sh" # https://github.com/huyng/bashmarks
+
 
 # Func
 ##  mkdir func or open directory
@@ -73,6 +77,11 @@ EOF
   command touch .git/hooks/pre-commit
   command echo "$data" > .git/hooks/pre-commit
   command chmod +x .git/hooks/pre-commit
+}
+
+function youtube
+{
+command youtube-dl -t --extract-audio --audio-format mp3 $1
 }
 
 
