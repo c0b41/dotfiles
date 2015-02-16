@@ -17,7 +17,7 @@ PS1='\[\033[0;35m\] $nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --versio
 ## Sources
 
 source "$HOME/bashmarks/bashmarks.sh" # https://github.com/huyng/bashmarks
-
+source "$HOME/server.sh"
 
 # Func
 ##  mkdir func or open directory
@@ -164,4 +164,4 @@ alias ....='cd ../..'
 alias .....='cd ../../..'
 alias ......='cd ../../../..'
 alias today='garden $nickname' 
-alias server='ssh root@104.236.32.41'
+
