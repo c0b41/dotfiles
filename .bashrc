@@ -9,15 +9,14 @@ blue='\e[0;34m'
 purple='\e[0;35m'
 cyan='\e[0;36m'
 white='\e[0;37m'
+ochre="\033[38;5;95m"
 
- 
-# Prompt
 
-PS1='\[\033[0;35m\] $nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --version") \[\033[0;30m\]] \e[0;32m$(__git_ps1)\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] λ ' 
 ## Sources
 
 source "$HOME/bashmarks/bashmarks.sh" # https://github.com/huyng/bashmarks
 source "$HOME/server.sh"
+
 
 # Func
 ##  mkdir func or open directory
@@ -165,3 +164,6 @@ alias .....='cd ../../..'
 alias ......='cd ../../../..'
 alias today='garden $nickname' 
 
+# Prompt
+
+PS1='\[\033[0;35m\]  $nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --version") \[\033[0;30m\]]\e[0;32m$(__git_ps1 "[ %s ]")\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] \n  λ ' 
