@@ -12,11 +12,19 @@ white='\e[0;37m'
 ochre="\033[38;5;95m"
 
 
-## Sources
+## Sources 
 
-source "$HOME/bashmarks/bashmarks.sh" # https://github.com/huyng/bashmarks
-source "$HOME/server.sh"
+if [ -f ~/server.sh ]; then
+    source ~/server.sh
+fi
 
+if [ -f~/.bash_gith ]; then
+   source ~/.bash_git
+fi
+
+if [ -f ~/.local/bin/bashmarks.sh ]; then
+   source ~/.local/bin/bashmarks.sh
+fi
 
 # Func
 ##  mkdir func or open directory
@@ -164,6 +172,10 @@ alias .....='cd ../../..'
 alias ......='cd ../../../..'
 alias today='garden $nickname' 
 
+if [ -d "$HOME/opt/node-webkit" ]; then
+    PATH="$PATH:$HOME/opt/node-webkit"
+fi
+
 # Prompt
 
-PS1='\[\033[0;35m\]  $nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --version") \[\033[0;30m\]]\e[0;32m$(__git_ps1 "[ %s ]")\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] \n  λ ' 
+PS1='\[\033[0;35m\]  $nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --version") \[\033[0;30m\]]\e[0;32m$(__git_ps1 "[ %s ]")\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] \n  ⚡ ' 
