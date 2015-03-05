@@ -9,8 +9,7 @@ blue='\e[0;34m'
 purple='\e[0;35m'
 cyan='\e[0;36m'
 white='\e[0;37m'
-ochre="\033[38;5;95m"
-
+ochre="\033[38;5;95m" 
 
 ## Sources 
 
@@ -63,16 +62,30 @@ function iotest
 data="$(cat <<-EOF
 	language: node_js
 	node_js:
-	  - iojs-v1.0.2
+	  - iojs-v1.4.0
 	EOF
 	)" 
  datas="$(cat package.json | jq '.scripts.test="iojs node_modules/mocha/bin/mocha test.js --reporter spec --timeout 15000"')"
  command echo "$data" > .travis.yml 
  command echo "$datas" > package.json
- command git add .
- command git commit -m "io test added"
- command git u
+ echo -e "${blue} Travis ci dosyası oluşturuldu :)  ${reset}"
 }
+## npm packages creater
+ function iop
+ {
+  if [ -z "$1" ]; then
+    echo -e "${red}   İsim yok pnp :(  ${reset}"
+  else
+    command mkdir $1 && cd $1
+    command ign create 
+    command ign apply
+    command npm init
+    iotest
+    echo -e "${blue}   Hepsini Oluşturduk pnp :)  ${reset}"
+  fi  
+ }
+
+
 ## git test hook create
 function testhook
 {
@@ -84,6 +97,7 @@ EOF
   command touch .git/hooks/pre-commit
   command echo "$data" > .git/hooks/pre-commit
   command chmod +x .git/hooks/pre-commit
+  echo -e "${blue}   Git Test Hook'u oluşturuldu :)  ${reset}"
 }
 
 function youtube
@@ -150,19 +164,21 @@ function gif {
 
 
 # Exports
+
 export LC_ALL=tr_TR.UTF-8 
 export LANG=tr_TR.UTF-8 
 export LANGUAGE=tr_TR.UTF-8 
-
-export GOROOT="c:/Go"
-
-export GOPATH=$HOME/GO
-
-export GOBIN=$GOPATH/bin
-
-export PATH=$PATH:$GOROOT/bin:$GOBIN
-
 export nickname="ayhankuru"
+
+## windows env 
+OS='uname'
+if [ "${OS}" == "windowsnt" ]; then
+  export GOROOT="c:/Go"
+  export GOPATH=$HOME/GO
+  export GOBIN=$GOPATH/bin
+  export PATH=$PATH:$GOROOT/bin:$GOBIN 
+fi
+
 
 # Alias
 
