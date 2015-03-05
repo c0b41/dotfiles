@@ -62,7 +62,7 @@ function iotest
 data="$(cat <<-EOF
 	language: node_js
 	node_js:
-	  - iojs-v1.4.0
+	  - iojs-v1.4.3
 	EOF
 	)" 
  datas="$(cat package.json | jq '.scripts.test="iojs node_modules/mocha/bin/mocha test.js --reporter spec --timeout 15000"')"
