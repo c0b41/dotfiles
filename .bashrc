@@ -1,16 +1,19 @@
 # Style
 
-color_off='\e[0m'
-black='\e[0;30m'
-red='\e[0;31m'
-green='\e[0;32m'
-yellow='\e[0;33m'
-blue='\e[0;34m'
-purple='\e[0;35m'
-cyan='\e[0;36m'
-white='\e[0;37m'
-ochre="\033[38;5;95m" 
-
+color_off=$(echo -e '\e[0m')
+black=$(echo -e '\e[0;30m')
+red=$(echo -e '\e[0;31m')
+green=$(echo -e '\e[0;32m')
+yellow=$(echo -e '\e[0;33m')
+blue=$(echo -e '\e[0;34m')
+purple=$(echo -e '\e[0;35m')
+cyan=$(echo -e '\e[0;36m')
+white=$(echo -e '\e[0;37m')
+ochre=$(echo -e '\033[38;5;95m')
+light_gray=$(echo -e '\033[0;37m')
+bold=$(echo -e '\033[1m')
+boldreset=$(echo -e '\033[0m')
+ioversion=$(eval "iojs --version")
 ## Sources 
 
 if [ -f ~/server.sh ]; then
@@ -24,6 +27,9 @@ fi
 if [ -f ~/.local/bin/bashmarks.sh ]; then
    source ~/.local/bin/bashmarks.sh
 fi
+
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
 
 # Func
 ##  mkdir func or open directory
@@ -167,6 +173,7 @@ function gif {
 
 
 
+
 # Exports
 
 export LC_ALL=tr_TR.UTF-8 
@@ -198,4 +205,21 @@ fi
 
 # Prompt
 
-PS1='\[\033[0;35m\]  $nickname\[\033[0;30m\] [\e[0;31m iojs $(eval "iojs --version") \[\033[0;30m\]]\e[0;32m$(__git_ps1 "[ %s ]")\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] \n  ⚡ ' 
+#oldPS1='\[\033[0;35m\]  $nickname\[\033[0;30m\] [\e[0;31m iojs $ioversion \[\033[0;30m\]]\e[0;32m$(__git_ps1 "[ %s ]")\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] \n  ⚡ ' 
+
+PS1='  ~ ${purple}$nickname${color_off} ${light_gray} [${color_off} ${yellow}iojs ${ioversion} ${light_gray}]${color_off} $(git branch &>/dev/null;\
+if [ $? -eq 0 ]; then \
+  echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
+  if [ "$?" -eq "0" ]; then \
+    # @4 - Clean repository - nothing to commit
+    echo "'${green}'"$(__git_ps1 "[ %s ]"); \
+  else \
+    # @5 - Changes to working tree
+    echo "'${yellow}'"$(__git_ps1 "[ %s ++ ]"); \
+  fi) '${yellow}${color_off}'"; \
+else \
+  # @2 - Prompt when not in GIT repo
+  echo " '${yellow}${color_off}'"; \
+fi) \n ${blue} \w ${color_off} \n  ${bold}${yellow}⚡ ${color_off}${boldreset}'  
+
+ 
