@@ -115,6 +115,14 @@ function youtube
 command youtube-dl -t --extract-audio --audio-format mp3 $1
 }
 
+function youtubelist
+{
+while read line
+do
+  command youtube-dl -t --extract-audio --audio-format mp3 $line
+done < $1
+
+}
 
 ## git stats 
 function gcn
@@ -222,4 +230,5 @@ else \
   echo " '${yellow}${color_off}'"; \
 fi) \n ${blue} \w ${color_off} \n  ${bold}${yellow}⚡ ${color_off}${boldreset}'  
 
+ 
  
