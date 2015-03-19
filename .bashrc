@@ -12,7 +12,7 @@ white=$(echo -e '\e[0;37m')
 ochre=$(echo -e '\033[38;5;95m')
 light_gray=$(echo -e '\033[0;37m')
 bold=$(echo -e '\033[1m')
-boldreset=$(echo -e '\033[0m')
+reset=$(echo -e '\033[0m')
 ioversion=$(eval "iojs --version")
 ## Sources 
 
@@ -134,7 +134,6 @@ function gcn
 function fln
 {
    arr=( $(find . -type f -name "*.$1") )
-   echo arr
     chunk="{list:{["
    for I in ${!arr[*]}; do
 
@@ -147,6 +146,20 @@ function fln
   chunk+="]}"
 
   echo ${chunk}
+}
+## all java file compile
+## javacompile $blabla
+function javacompile
+{
+   arr=( $(find . -type f -name "*.java") )
+
+   for I in ${!arr[*]}; do
+	command javac ${arr[$I]}
+   done
+
+  echo -e "${blue}  Java Compile edildi  ${reset}"
+
+  command java $1
 }
 ## image convert to blur
 function blur
