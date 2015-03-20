@@ -30,6 +30,7 @@ fi
 
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
+source ~/.nvm/nvm.sh
 
 # Func
 ##  mkdir func or open directory
@@ -68,7 +69,7 @@ function iotest
 data="$(cat <<-EOF
 	language: node_js
 	node_js:
-	  - iojs-v1.4.3
+	  - iojs-v1.6.0
 	EOF
 	)" 
  datas="$(cat package.json | jq '.scripts.test="iojs node_modules/mocha/bin/mocha test.js --reporter spec --timeout 15000"')"
@@ -244,4 +245,4 @@ else \
 fi) \n ${blue} \w ${color_off} \n  ${bold}${yellow}⚡ ${color_off}${boldreset}'  
 
  
- 
+
