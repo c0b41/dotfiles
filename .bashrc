@@ -246,7 +246,7 @@ fi
 
 # Prompt
 
-#oldPS1='\[\033[0;35m\]  $nickname\[\033[0;30m\] [\e[0;31m iojs $ioversion \[\033[0;30m\]]\e[0;32m$(__git_ps1 "[ %s ]")\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] \n  ⚡ ' 
+#PS1='\[\033[0;35m\]  $nickname\[\033[0;30m\] [\e[0;31m iojs $ioversion \[\033[0;30m\]]\e[0;32m$(__git_ps1 "[ %s ]")\[\033[0;30m\] \[\033[0;35m\]\n  \[\033[00;34m\]\w\[\033[00m\] \n  ⚡ ' 
 
 PS1='  ~ ${purple}$nickname${color_off} ${light_gray} [${color_off} ${yellow}iojs ${ioversion} ${light_gray}]${color_off} $(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
@@ -261,7 +261,7 @@ if [ $? -eq 0 ]; then \
 else \
   # @2 - Prompt when not in GIT repo
   echo " '${yellow}${color_off}'"; \
-fi) \n ${blue} \w ${color_off} \n  ${bold}${yellow}⚡ ${color_off}${boldreset}'  
+fi) \n ${blue} \w ${color_off} \n  ⚡ '  
 
  
 
