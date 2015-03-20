@@ -113,14 +113,14 @@ EOF
 
 function youtube
 {
-command youtube-dl -t --extract-audio --audio-format mp3 $1
+command youtube-dl $1 -x -o "%(title)s.%(ext)s" --audio-format=mp3 --audio-quality=512k
 }
 
 function youtubelist
 {
 while read line
 do
-  command youtube-dl -t --extract-audio --audio-format mp3 $line
+  command youtube-dl $1 -x -o "%(title)s.%(ext)s" --audio-format=mp3 --audio-quality=512k
 done < $1
 
 }
