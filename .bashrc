@@ -32,6 +32,9 @@ source ~/.git-completion.bash
 source ~/.git-prompt.sh
 source ~/.nvm/nvm.sh
 
+function string_replace {
+    echo "${1/\*/$2}"
+}
 # Func
 ##  mkdir func or open directory
 function mkdir
@@ -81,17 +84,17 @@ data="$(cat <<-EOF
 function circletest
 {
 data="$(cat <<-EOF
-machine:
-  pre:
-    - curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
-  node:
-    version: iojs-1.6.0
-dependencies:
-  override:
-    - npm install
-test:
-  post:
-    - npm test
+ machine:
+   pre:
+     - curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+   node:
+     version: iojs-1.6.0
+ dependencies:
+   override:
+     - npm install
+ test:
+   post:
+     - npm test
 EOF
 )" 
  command echo "$data" > circle.yml 
@@ -116,7 +119,15 @@ EOF
   fi  
  }
 
+function badge
+{
+template="$(cat <<-EOF
+[![Travis Build Status](http://img.shields.io/travis/{{name}}/{{proje}}.svg?style=flat-square)](https://travis-ci.org/{{name}}/{{proje}}) [![Circle Build Status](https://img.shields.io/circleci/project/{{name}}/{{proje}}.svg?style=flat-square)](https://circleci.com/gh/{{name}}/{{proje}}) [![Build Status](https://img.shields.io/david/{{name}}/{{proje}}.svg?style=flat-square)](https://david-dm.org/{{name}}/{{proje}}) [![io.js supported](https://img.shields.io/badge/io.js-supported-green.svg?style=flat-square)](https://iojs.org)
+EOF
+  )"
 
+echo $template | name=$1 proje=$2 mush 
+}
 
 function gitssh
 {
