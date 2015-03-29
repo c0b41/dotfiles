@@ -1,48 +1,10 @@
-apidoc@
-null
-bower@
-null
-clif@*
-coffee-script@
-component@*
-cowsay@*
-dox@*
-express@
-express-generator@4
-ezflix@
-null
-gardening@*
-generator-demi@
-generator-element@
-generator-gulp-plugin@
-generator-pho@
-generator-rendrapp@
-ghcal@*
-grumpycat@*
-grunt@
-grunt-cli@
-gulp@
-ign@
-irm@*
-jitsu@
-jitsu-ui@
-jsonfilter@
-null
-nodemon@*
-npm@2.0.0
-pageres@*
-null
-slap@
-slush@*
-slush-element@*
-spot@*
-spotify-kontrol-cli@
-stream-adventure@
-stream-handbook@
-torrent@
-trayballoon@*
-unfluff@
-vtop@
-whip@
-null
-yo@
+ [1m> [0m[0;32matom-shell[0m
+ [1m> [0m[0;32mbower[0m
+ [1m> [0m[0;32mcomponent[0m
+ [1m> [0m[0;32mcowsay[0m
+ [1m> [0m[0;32mgrumpycat[0m
+ [1m> [0m[0;32mgulp[0m
+ [1m> [0m[0;32mign[0m
+ [1m> [0m[0;32mlyrictagger[0m
+ [1m> [0m[0;32mnodemon[0m
+ [1m> [0m[0;32mtorrent[0m
