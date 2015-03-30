@@ -114,6 +114,8 @@ EOF
     command ign create 
     command ign apply
     command npm init
+    badge $nickname $1 > readme.md
+    echo -e "${blue}   Readme.md oluşturuldu :)  ${reset}"
     iotest
     echo -e "${blue}   Hepsini Oluşturduk pnp :)  ${reset}"
   fi  
