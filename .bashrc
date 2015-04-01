@@ -104,6 +104,31 @@ EOF
  echo -e "${blue} Circle ci dosyası oluşturuldu ve gönderildi :)  ${reset}"
 }
 
+## Appveyor  added func
+function appveyortest
+{
+data="$(cat <<-EOF
+environment:
+  matrix:
+    - nodejs_version: "1.6"
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install
+build: off
+test_script:
+  - node --version
+  - npm --version
+  - npm run test
+version: "{build}"
+EOF
+)" 
+ command echo "$data" > appveyor.yml 
+ command git add appveyor.yml
+ command git commit -m "appveyor test added"
+ command git u
+ echo -e "${blue} Appveyor dosyası oluşturuldu ve gönderildi :)  ${reset}"
+}
+
 ## npm packages creater
  function iop
  {
@@ -124,7 +149,7 @@ EOF
 function badge
 {
 template="$(cat <<-EOF
-[![Travis Build Status](http://img.shields.io/travis/{{name}}/{{proje}}.svg?style=flat-square)](https://travis-ci.org/{{name}}/{{proje}}) [![Circle Build Status](https://img.shields.io/circleci/project/{{name}}/{{proje}}.svg?style=flat-square)](https://circleci.com/gh/{{name}}/{{proje}}) [![Build Status](https://img.shields.io/david/{{name}}/{{proje}}.svg?style=flat-square)](https://david-dm.org/{{name}}/{{proje}}) [![io.js supported](https://img.shields.io/badge/io.js-supported-green.svg?style=flat-square)](https://iojs.org)
+[![Travis Build Status](http://img.shields.io/travis/{{name}}/{{proje}}.svg?style=flat-square)](https://travis-ci.org/{{name}}/{{proje}}) [![Circle Build Status](https://img.shields.io/circleci/project/{{name}}/{{proje}}.svg?style=flat-square)](https://circleci.com/gh/{{name}}/{{proje}}) [![Appveyor Build Status](https://img.shields.io/appveyor/ci/{{name}}/{{proje}}.svg?style=flat-square)](https://ci.appveyor.com/project/{{name}}/{{proje}}) [![Build Status](https://img.shields.io/david/{{name}}/{{proje}}.svg?style=flat-square)](https://david-dm.org/{{name}}/{{proje}}) [![io.js supported](https://img.shields.io/badge/io.js-supported-green.svg?style=flat-square)](https://iojs.org)
 EOF
   )"
 
@@ -164,6 +189,10 @@ done < $1
 
 }
 
+function zipfolder
+{
+  zip -r $1 $2
+}
 # mp3 list name convert
 #
 function convertlist
