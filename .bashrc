@@ -108,6 +108,8 @@ EOF
 function appveyortest
 {
 data="$(cat <<-EOF
+init:
+  - git config --global core.autocrlf true
 environment:
   matrix:
     - nodejs_version: "1.6"
