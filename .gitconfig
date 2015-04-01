@@ -13,6 +13,7 @@
         pb              = pull
         p               = pull --rebase origin master
         u               = push origin master
+        dev               = push origin dev
         ub              = push
         st              = status
         ci              = commit
