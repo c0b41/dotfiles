@@ -12,7 +12,7 @@ export nickname="ayhankuru"
 ## Sources 
 
 if [ -f ~/server.sh ]; then
-    source ~/server.sh
+    source ~/.server.sh
 fi
 
 if [ -f~/.bash_gith ]; then
