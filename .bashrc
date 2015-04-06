@@ -68,7 +68,7 @@ if [ $? -eq 0 ]; then \
 else \
   # @2 - Prompt when not in GIT repo
   echo " '${yellow}${color_off}'"; \
-fi) \n ${blue} \w ${color_off} \n  ⚡ '  
+fi) \n ${blue} \w ${color_off} \n  Δ '  
 
  
 
