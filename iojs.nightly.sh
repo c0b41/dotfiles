@@ -16,4 +16,4 @@ url="https://iojs.org/download/${type}/$latest/iojs-${latest}-linux-x64.tar.gz"
 
 echo "Downloading ${url}..."
 
-curl -sL $url | tar -vx --strip-components=1 -C /usr/local/
+curl -sL $url | xzcat | tar -vx --strip-components=1 -C /usr/local/
