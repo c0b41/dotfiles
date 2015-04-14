@@ -21,3 +21,4 @@ source ~/.dotfiles/.funcs/javacompile.sh
 source ~/.dotfiles/.funcs/cleartitle.sh
 source ~/.dotfiles/.funcs/torrentlist.sh
 source ~/.dotfiles/.funcs/torrentname.sh
+source ~/.dotfiles/.funcs/rename.sh
