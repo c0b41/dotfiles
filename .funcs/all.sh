@@ -19,3 +19,4 @@ source ~/.dotfiles/.funcs/fln.sh
 source ~/.dotfiles/.funcs/blur.sh
 source ~/.dotfiles/.funcs/javacompile.sh
 source ~/.dotfiles/.funcs/cleartitle.sh
+source ~/.dotfiles/.funcs/torrentlist.sh
