@@ -1,4 +1,6 @@
-function rename
+function trename
 {
-  command mv $1 $2
+  variable="$1"
+  newname="$(fixname ${variable})" 
+  rename $1 $newname
 }
