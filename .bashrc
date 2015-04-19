@@ -8,6 +8,7 @@ export LC_ALL=tr_TR.UTF-8
 export LANG=tr_TR.UTF-8 
 export LANGUAGE=tr_TR.UTF-8 
 export nickname="ayhankuru"
+export DROPBOX_USE_LIBAPPINDICATOR=1
 
 ## Sources 
 
@@ -68,7 +69,7 @@ if [ $? -eq 0 ]; then \
 else \
   # @2 - Prompt when not in GIT repo
   echo " '${yellow}${color_off}'"; \
-fi) \n ${blue} \w ${color_off} \n  ✂ '  
+fi) \n ${blue} \w ${color_off} \n  🏃 '  
 
  
 

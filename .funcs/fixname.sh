@@ -5,7 +5,7 @@ function fixname
   season="$(echo ${variable##*/} | torrent-name | jq -r '.season')"
   episode="$(echo ${variable##*/} | torrent-name | jq -r '.episode')"
   newname="$(echo ${name} | sed 's/ /_/g')"
-  new="${newname}_S0${season}_E0${episode}"
+  new="${newname} S0${season} E0${episode}"
   echo $new
 }
 
