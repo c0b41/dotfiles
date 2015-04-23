@@ -1,5 +1,7 @@
 syntax on
 colorscheme monokai
+
+set autoread
 set number	
 set linebreak	
 set showbreak=+++
