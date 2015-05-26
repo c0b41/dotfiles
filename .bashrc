@@ -64,7 +64,7 @@ if [ $? -eq 0 ]; then \
     echo "'${green}'"$(__git_ps1 "[ %s ]"); \
   else \
     # @5 - Changes to working tree
-    echo "'${yellow}'"$(__git_ps1 "[ %s ++ ]"); \
+    echo "'${yellow}'"$(__git_ps1 "[ %s ⇡⇡ ]"); \
   fi) '${yellow}${color_off}'"; \
 else \
   # @2 - Prompt when not in GIT repo
