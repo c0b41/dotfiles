@@ -25,3 +25,4 @@ source ~/.dotfiles/.funcs/fixname.sh
 source ~/.dotfiles/.funcs/rename.sh
 source ~/.dotfiles/.funcs/mp3name.sh
 source ~/.dotfiles/.funcs/static.sh
+source ~/.dotfiles/.funcs/upstream.sh
