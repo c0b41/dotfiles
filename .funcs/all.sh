@@ -1,3 +1,4 @@
+
 source ~/.dotfiles/.funcs/replace.sh
 source ~/.dotfiles/.funcs/mkdir.sh
 source ~/.dotfiles/.funcs/subl.sh
@@ -27,3 +28,4 @@ source ~/.dotfiles/.funcs/mp3name.sh
 source ~/.dotfiles/.funcs/static.sh
 source ~/.dotfiles/.funcs/upstream.sh
 source ~/.dotfiles/.funcs/gitalias.sh
+source ~/.dotfiles/.funcs/gitrecentbranches.sh
