@@ -1,12 +1,40 @@
- [1m> [0m[0;32mairpaste[0m
- [1m> [0m[0;32matom-shell[0m
- [1m> [0m[0;32mbower[0m
- [1m> [0m[0;32mcomponent[0m
- [1m> [0m[0;32mcowsay[0m
- [1m> [0m[0;32mgrumpycat[0m
- [1m> [0m[0;32mgulp[0m
- [1m> [0m[0;32mhsc-cli[0m
- [1m> [0m[0;32mign[0m
- [1m> [0m[0;32mlyrictagger[0m
- [1m> [0m[0;32mnodemon[0m
- [1m> [0m[0;32mtorrent[0m
+null
+@cobaimelan/ytclear@*
+airpaste@*
+anybar@*
+assemble@beta
+atom-shell@*
+babel@*
+belch@*
+bower@*
+brightness@*
+component@*
+cowsay@*
+electron-prebuilt@*
+empty-trash@*
+f-record@*
+generator-element@*
+gitbook-cli@*
+github-current-user@*
+grumpycat@*
+gulp@*
+hsc-cli@*
+ign@*
+istanbul@*
+linux-distro@*
+lyrictagger@*
+node-inspector@*
+nodemon@*
+null
+npm-check@*
+npm-check-updates@*
+renamer@*
+sproxy@*
+null
+torrent@*
+null
+null
+wifi-name@*
+wifi-password@*
+yo@*
+ytclear@*
