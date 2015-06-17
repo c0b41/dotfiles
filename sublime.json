@@ -1,19 +1,19 @@
 {
-	"color_scheme": "Packages/Theme - itg.flat/itg.Monokai.tmTheme",
-	"font_size": 11,
-	"ignored_packages":
+	"always_show_minimap_viewport": true,
+	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
+	"font_options":
 	[
-		"Vintage"
+		"gray_antialias"
 	],
+	"font_size": 13,
 	"indent_guide_options":
 	[
 		"draw_normal",
 		"draw_active"
 	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"overlay_scroll_bars": "enabled",
 	"show_encoding": true,
-	"show_line_endings": true,
-	"theme": "itg.flat.dark.sublime-theme",
-	"update_check": false,
-	"hot_exit": false,
-	"remember_open_files": false
+	"theme": "Material-Theme-Darker.sublime-theme"
 }
