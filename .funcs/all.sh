@@ -26,3 +26,4 @@ source ~/.dotfiles/.funcs/rename.sh
 source ~/.dotfiles/.funcs/mp3name.sh
 source ~/.dotfiles/.funcs/static.sh
 source ~/.dotfiles/.funcs/upstream.sh
+source ~/.dotfiles/.funcs/gitalias.sh
