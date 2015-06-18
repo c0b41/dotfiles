@@ -30,3 +30,5 @@ source ~/.dotfiles/.funcs/upstream.sh
 source ~/.dotfiles/.funcs/gitalias.sh
 source ~/.dotfiles/.funcs/gitrecentbranches.sh
 source ~/.dotfiles/.funcs/gopackage.sh
+source ~/.dotfiles/.funcs/cop.sh
+source ~/.dotfiles/.funcs/parlaklik.sh
