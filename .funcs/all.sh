@@ -29,3 +29,4 @@ source ~/.dotfiles/.funcs/static.sh
 source ~/.dotfiles/.funcs/upstream.sh
 source ~/.dotfiles/.funcs/gitalias.sh
 source ~/.dotfiles/.funcs/gitrecentbranches.sh
+source ~/.dotfiles/.funcs/gopackage.sh

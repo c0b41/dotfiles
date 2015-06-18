@@ -42,11 +42,8 @@ if [ "${OS}" == "windowsnt" ]; then
   export GOBIN=$GOPATH/bin
   export PATH=$PATH:$GOROOT/bin:$GOBIN 
 fi
-
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
-
 
 # Alias
 
