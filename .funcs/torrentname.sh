@@ -1,6 +1,6 @@
 function tname
 {
-for file in $HOME/İndirilenler/*.torrent; do
+for file in *.torrent; do
   trename $file
 done
 }

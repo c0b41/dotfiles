@@ -1,4 +1,4 @@
 function static
 {
- python -m SimpleHTTPServer 8000
+ command python -m SimpleHTTPServer 8000
 }

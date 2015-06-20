@@ -5,7 +5,7 @@ data="$(cat <<-EOF
    pre:
      - curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
    node:
-     version: iojs-1.6.0
+     version: iojs-2.3.0
  dependencies:
    override:
      - npm install
