@@ -17,6 +17,6 @@ EOF
  command echo "$data" > circle.yml 
  command git add circle.yml
  command git commit -m "circle ci test added"
- command git u
+ #command git u
  echo -e "${blue} Circle ci dosyası oluşturuldu ve gönderildi :)  ${reset}"
 }
