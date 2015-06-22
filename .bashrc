@@ -16,7 +16,7 @@ if [ -f ~/server.sh ]; then
     source ~/.server.sh
 fi
 
-if [ -f~/.bash_gith ]; then
+if [ -f~/.bash_git ]; then
    source ~/.bash_git
 fi
 
