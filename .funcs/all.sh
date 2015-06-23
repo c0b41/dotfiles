@@ -32,3 +32,4 @@ source ~/.dotfiles/.funcs/gitrecentbranches.sh
 source ~/.dotfiles/.funcs/gopackage.sh
 source ~/.dotfiles/.funcs/cop.sh
 source ~/.dotfiles/.funcs/parlaklik.sh
+source ~/.dotfiles/.funcs/goversion.sh
