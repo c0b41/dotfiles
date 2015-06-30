@@ -9,6 +9,7 @@ export LANG=tr_TR.UTF-8
 export LANGUAGE=tr_TR.UTF-8 
 export nickname="ayhankuru"
 export DROPBOX_USE_LIBAPPINDICATOR=1
+export PORT=5000
 
 ## Sources 
 
