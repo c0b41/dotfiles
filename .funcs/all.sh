@@ -35,3 +35,4 @@ source ~/.dotfiles/.funcs/parlaklik.sh
 source ~/.dotfiles/.funcs/goversion.sh
 source ~/.dotfiles/.funcs/todocount.sh
 source ~/.dotfiles/.funcs/private-npm.sh
+source ~/.dotfiles/.funcs/say.sh
