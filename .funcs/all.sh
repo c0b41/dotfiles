@@ -36,3 +36,4 @@ source ~/.dotfiles/.funcs/goversion.sh
 source ~/.dotfiles/.funcs/todocount.sh
 source ~/.dotfiles/.funcs/private-npm.sh
 source ~/.dotfiles/.funcs/say.sh
+source ~/.dotfiles/.funcs/joinimage.sh
