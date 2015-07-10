@@ -1,4 +1,4 @@
 function mkdir
 {
-  command sudo mkdir $1 && cd $1
+  command mkdir $1 && cd $1
 }
