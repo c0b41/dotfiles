@@ -5,10 +5,10 @@
 #    or for next-nightly:
 #  sudo ./popcorntime-build.sh next
 
-nightly="https://ci.popcorntime.io/job/Popcorn-Time/"
-if [ "X$1" == "Xnext" ]; then
-  nightly="https://ci.popcorntime.io/job/Popcorn-Experimental/"
-fi
+nightly="https://ci.popcorntime.io/job/Popcorn-Desktop/"
+#if [ "X$1" == "Xnext" ]; then
+#  nightly="https://ci.popcorntime.io/job/Popcorn-Experimental/"
+#fi
 
 
 
