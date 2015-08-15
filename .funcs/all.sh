@@ -38,3 +38,4 @@ source ~/.dotfiles/.funcs/private-npm.sh
 source ~/.dotfiles/.funcs/say.sh
 source ~/.dotfiles/.funcs/joinimage.sh
 source ~/.dotfiles/.funcs/sconvert.sh
+source ~/.dotfiles/.funcs/exportvideo.sh
