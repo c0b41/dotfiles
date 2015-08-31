@@ -13,7 +13,7 @@ function torrentname
   	set title (echo $data | jq -r '.title' | sed -e "s/\b\(.\)/\u\1/g" )
   	set season (echo $data | jq -r '.season' )
   	set episode (echo $data | jq -r '.episode' )
-  	set new "$title  S0$seasonxE0$episode"
+  	set new "$title  S0$season x E0$episode"
   	echo $new
   end
 end
