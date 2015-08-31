@@ -18,4 +18,4 @@ url=$nightly$latest
 
 echo "Downloading ${url}..."
 
-curl -sL $url | xzcat | tar -vx --strip-components=1 -C /opt/popcorn-time &> /dev/null 
+curl -sL $url | xzcat | tar -vx --strip-components=1 -C ~/.Popcorn-Time &> /dev/null 

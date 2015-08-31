@@ -29,9 +29,18 @@ fi
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 
-source ~/.git-completion.bash
-source ~/.git-prompt.sh
-source ~/.nvm/nvm.sh
+if [ -f ~/.git-completion.bash ]; then
+   source ~/.git-completion.bash
+fi
+
+if [ -f ~/.git-prompt.sh ]; then
+   source ~/.git-prompt.sh
+fi
+
+if [ -f ~/.git-prompt.sh ]; then
+   source ~/.nvm/nvm.sh
+fi
+
 
 ## Funcs
 
