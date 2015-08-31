@@ -20,9 +20,6 @@ source ~/.dotfiles/.funcs/fln.sh
 source ~/.dotfiles/.funcs/blur.sh
 source ~/.dotfiles/.funcs/javacompile.sh
 source ~/.dotfiles/.funcs/cleartitle.sh
-source ~/.dotfiles/.funcs/torrentlist.sh
-source ~/.dotfiles/.funcs/torrentname.sh
-source ~/.dotfiles/.funcs/fixname.sh
 source ~/.dotfiles/.funcs/rename.sh
 source ~/.dotfiles/.funcs/mp3name.sh
 source ~/.dotfiles/.funcs/static.sh
