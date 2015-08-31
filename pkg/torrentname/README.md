@@ -28,7 +28,7 @@ $ torrentname "The.Staying.Alive.S05E02.720p.HDTV.x264-KILLERS[rartv]"
 
 ## Screenshot
 
-![Example](/.screeshot.png)
+![Example](./screenshot.png)
 
 
 # License
