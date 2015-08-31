@@ -39,6 +39,10 @@ curl -OJL https://github.com/pornel/giflossy/releases/download/lossy%2F1.82.1/gi
 unzip gifsicle-1.82.1-lossy.zip -d gifsicle
 sudo mv gifsicle/linux/gifsicle-debian6 /usr/local/bin/gifsicle
 
+wget https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64
+sudo mv jq-linux64 /usr/local/bin/jq
+
+
 wget http://download.teamviewer.com/download/teamviewer_i386.deb
 sudo dpkg -i teamviewer_i386.deb
 
