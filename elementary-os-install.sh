@@ -1,7 +1,7 @@
 sudo apt-get update
 
 ## Programing language
-sudo apt-get install -y iojs
+sudo apt-get -y install iojs
 sudo apt-get -y install golang
 
 ## Tools
@@ -29,8 +29,9 @@ sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install dconf-editor
 sudo apt-get -y install gimp gimp-plugin-registry
 sudo apt-get -y install libreoffice 
-sudo apt-get -y charles-proxy
-sudo apt-get -y birdie
+sudo apt-get -y install charles-proxy
+sudo apt-get -y install birdie
+sudo apt-get -y install nautilus-dropbox
 
 ## Others
 
@@ -43,7 +44,6 @@ sudo dpkg -i teamviewer_i386.deb
 
 wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
 sudo dpkg -i skype-ubuntu-precise_4.3.0.37-1_i386.deb
-
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
