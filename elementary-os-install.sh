@@ -1,3 +1,4 @@
+sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
 sudo apt-get update
 
 ## Programing language
