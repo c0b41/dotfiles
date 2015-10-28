@@ -38,3 +38,4 @@ source ~/.dotfiles/.funcs/sconvert.sh
 source ~/.dotfiles/.funcs/exportvideo.sh
 source ~/.dotfiles/.funcs/cutvideo.sh
 source ~/.dotfiles/.funcs/dropboxcp.sh
+source ~/.dotfiles/.funcs/gif.sh
