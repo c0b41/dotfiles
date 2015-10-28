@@ -29,7 +29,7 @@ sudo apt-get -y install vlc browser-plugin-vlc
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install dconf-editor
 sudo apt-get -y install gimp gimp-plugin-registry
-sudo apt-get -y install libreoffice 
+sudo apt-get -y install libreoffice
 sudo apt-get -y install charles-proxy
 sudo apt-get -y install birdie
 sudo apt-get -y install nautilus-dropbox
@@ -52,6 +52,11 @@ sudo dpkg -i skype-ubuntu-precise_4.3.0.37-1_i386.deb
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+sudo apt-add-repository 'deb http://toolbelt.herokuapp.com/ubuntu ./'
+curl https://toolbelt.herokuapp.com/apt/release.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y install heroku-toolbelt ruby libopenssl-ruby ruby1.8-dev libreadline-ruby
 
 
 sudo apt-get -f install
