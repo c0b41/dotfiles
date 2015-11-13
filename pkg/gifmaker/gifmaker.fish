@@ -3,17 +3,17 @@
 #
 # USAGE
 #   Options
-# Src videofile
-# width size
-# height size
+#   Src videofile
+#   width size
+#   height size
 
 function gifmaker
   if not available ffmpeg imagemagick gifsicle
     echo "📂  Please install ffmpeg,imagemagick,gifsicle first!"
-  else    
+  else
 
   	if [ $argv[1] ]
-	    
+
 	    set outfilename (eval basename $argv[1] | cut -d. -f1)
   		set filename "$outfilename.gif"
 
@@ -30,9 +30,9 @@ function gifmaker
 		  convert +dither -layers Optimize gifify-tmp-*.png GIF:- | gifsicle --no-warnings --colors 256 --delay=10 --loop --optimize=3 --multifile - > $filename
 		  rm gifify-tmp-*.png
 
-	else 
+	else
 	    echo " Example: gifmaker test.mov 700 400 "
 	end
-     
+
   end
 end
