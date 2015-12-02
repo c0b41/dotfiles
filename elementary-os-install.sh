@@ -1,5 +1,3 @@
-sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
-sudo apt-get update
 
 ## Programing language
 sudo apt-get -y install iojs
@@ -59,10 +57,10 @@ sudo apt-get update
 sudo apt-get -y install heroku-toolbelt ruby libopenssl-ruby ruby1.8-dev libreadline-ruby
 
 
-sudo apt-get -f install
-
 ## Nvm other
 
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 
 sudo npm install -g gulp fly twitbot empty-trash wifi-password wifi-name imgur-uploader xo ign paket
+
+go get github.com/peco/peco/cmd/peco
