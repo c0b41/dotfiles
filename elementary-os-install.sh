@@ -15,6 +15,7 @@ sudo apt-get -y install mpg123
 sudo apt-get -y install mencoder
 sudo apt-get -y install xclip
 sudo apt-get -y install colordiff
+sudo apt-get -y install tmux
 
 ## Apps
 sudo apt-get -y install vagrant
