@@ -35,6 +35,9 @@ sudo apt-get -y install nautilus-dropbox
 
 ## Others
 
+sudo curl https://yt-dl.org/downloads/2015.12.09/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+
 curl -OJL https://github.com/pornel/giflossy/releases/download/lossy%2F1.82.1/gifsicle-1.82.1-lossy.zip
 unzip gifsicle-1.82.1-lossy.zip -d gifsicle
 sudo mv gifsicle/linux/gifsicle-debian6 /usr/local/bin/gifsicle
