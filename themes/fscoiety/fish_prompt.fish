@@ -1,5 +1,5 @@
 function fish_prompt
-  set -l emoji    "😶"
+  set -l emoji    "👻"
   set -l nick     $nickname
   set -l code     $status
   set -l nodejsv  (eval node --version)
