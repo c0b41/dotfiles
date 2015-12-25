@@ -20,7 +20,7 @@ $ wa g videocut
 ## Usage
 
 ```fish
-$ videocut
+$ videocut video.mkv 00:01:00 00:05:00 mkv 
 ```
 
 # License
