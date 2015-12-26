@@ -6,20 +6,20 @@
 <br>
 
 > gif for [Wahoo][wahoo].
- 
+
 
 ## Install
 
 
 ```fish
-$ wa g gif
+$ wa g gifmaker
 ```
 
 
 ## Usage
 
 ```fish
-$ gif
+$ gifmaker test.mov 700
 ```
 
 # License
