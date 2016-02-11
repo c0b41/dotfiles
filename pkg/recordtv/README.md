@@ -23,7 +23,7 @@ $ wa g recordtv
 ## Usage
 
 ```fish
-$ recordtv
+$ recordtv mkv
 ```
 
 # License
