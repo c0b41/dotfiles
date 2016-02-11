@@ -1,6 +1,5 @@
 
 ## Programing language
-sudo apt-get -y install iojs
 sudo apt-get -y install golang
 
 ## Tools
@@ -20,9 +19,6 @@ sudo apt-get -y install tmux
 
 ## Apps
 sudo apt-get -y install vagrant
-sudo apt-get -y install httpie
-sudo apt-get -y install transmission
-sudo apt-get -y install elementary-desktop elementary-standard elementary-minimal
 sudo apt-get -y install sublime-text-installer
 sudo apt-get -y install spotify-client
 sudo apt-get -y install vlc browser-plugin-vlc
@@ -30,8 +26,6 @@ sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install dconf-editor
 sudo apt-get -y install gimp gimp-plugin-registry
 sudo apt-get -y install libreoffice
-sudo apt-get -y install charles-proxy
-sudo apt-get -y install birdie
 sudo apt-get -y install nautilus-dropbox
 
 ## Others
@@ -60,6 +54,16 @@ sudo apt-add-repository 'deb http://toolbelt.herokuapp.com/ubuntu ./'
 curl https://toolbelt.herokuapp.com/apt/release.key | sudo apt-key add -
 sudo apt-get update
 sudo apt-get -y install heroku-toolbelt ruby libopenssl-ruby ruby1.8-dev libreadline-ruby
+
+
+sudo add-apt-repository "deb http://www.bunkus.org/ubuntu/saucy/ ./"
+wget -O - http://www.bunkus.org/gpg-pub-moritzbunkus.txt | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install mkvtoolnix
+
+sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-get update
+sudo apt-get install fish
 
 
 ## Nvm other
