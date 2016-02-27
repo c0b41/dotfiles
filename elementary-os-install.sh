@@ -16,6 +16,7 @@ sudo apt-get -y install xclip
 sudo apt-get -y install colordiff
 sudo apt-get -y install unrar
 sudo apt-get -y install tmux
+sudo apt-get install openvpn network-manager-openvpn
 
 ## Apps
 sudo apt-get -y install vagrant
