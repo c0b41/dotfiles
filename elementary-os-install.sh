@@ -1,4 +1,16 @@
+# Repo
 
+sudo apt-add-repository ppa:tomato-team/tomato-stable
+sudo apt-add-repository ppa:bablu-boy/nutty.0.1
+sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-add-repository 'deb http://toolbelt.herokuapp.com/ubuntu ./'
+curl https://toolbelt.herokuapp.com/apt/release.key | sudo apt-key add -
+sudo add-apt-repository "deb http://www.bunkus.org/ubuntu/saucy/ ./"
+wget -O - http://www.bunkus.org/gpg-pub-moritzbunkus.txt | sudo apt-key add -
+
+# Update
+
+sudo apt-get update
 ## Programing language
 sudo apt-get -y install golang
 
@@ -19,6 +31,11 @@ sudo apt-get -y install tmux
 sudo apt-get -y install openvpn network-manager-openvpn
 sudo apt-get -y install vagrant
 sudo apt-get -y install virtualbox-dkms
+sudo apt-get -y install fish
+sudo apt-get -y install mkvtoolnix
+sudo apt-get -y install heroku-toolbelt ruby libopenssl-ruby ruby1.8-dev libreadline-ruby
+sudo apt-get -y install nutty
+sudo apt-get -y install poedit
 
 ## Apps
 sudo apt-get -y install vagrant
@@ -30,6 +47,7 @@ sudo apt-get -y install dconf-editor
 sudo apt-get -y install gimp gimp-plugin-registry
 sudo apt-get -y install libreoffice
 sudo apt-get -y install nautilus-dropbox
+sudo apt-get -y install tomato
 
 ## Others
 
@@ -53,26 +71,6 @@ sudo dpkg -i skype-ubuntu-precise_4.3.0.37-1_i386.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-sudo apt-add-repository 'deb http://toolbelt.herokuapp.com/ubuntu ./'
-curl https://toolbelt.herokuapp.com/apt/release.key | sudo apt-key add -
-sudo apt-get update
-sudo apt-get -y install heroku-toolbelt ruby libopenssl-ruby ruby1.8-dev libreadline-ruby
-
-
-sudo add-apt-repository "deb http://www.bunkus.org/ubuntu/saucy/ ./"
-wget -O - http://www.bunkus.org/gpg-pub-moritzbunkus.txt | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install mkvtoolnix
-
-sudo apt-add-repository ppa:fish-shell/release-2
-sudo apt-get update
-sudo apt-get install fish
-
-
 ## Nvm other
 
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
-
-sudo npm install -g gulp fly twitbot empty-trash wifi-password wifi-name imgur-uploader xo ign paket
-
-go get github.com/peco/peco/cmd/peco
