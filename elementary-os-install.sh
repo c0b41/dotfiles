@@ -36,7 +36,6 @@ sudo apt-get -y install mkvtoolnix
 sudo apt-get -y install heroku-toolbelt ruby libopenssl-ruby ruby1.8-dev libreadline-ruby
 sudo apt-get -y install nutty
 sudo apt-get -y install poedit
-sudo apt-get -y install gnome-terminal
 sudo apt-get -y install tmux
 
 ## Apps
