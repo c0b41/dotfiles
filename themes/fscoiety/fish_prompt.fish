@@ -1,9 +1,8 @@
 function fish_prompt
-  set -l emoji    "👻"
+  set -l emoji    "⚡"
   set -l nick     $nickname
   set -l code     $status
   set -l nodejsv  (eval node --version)
-  set -l gov	    (eval go version | awk '{ print substr( $0, 14 ,6) }')
   set -l cyan     (set_color -o cyan)
   set -l yellow   (set_color -o yellow)
   set -l red      (set_color -o red)
@@ -14,9 +13,9 @@ function fish_prompt
 
   echo -n -e (begin
     test $code = 0
-      and echo "$purple ~ $nick $normal [$yellow nodejs $nodejsv $normal] $yellow ⚡ $normal [$yellow go $gov $normal] \n"
-  end) "$blue"(prompt_pwd) (begin
-    echo "$yellow git:("$normal(git_branch_name)"$yellow)"
+      and echo "$red ~ $nick $normal [$green nodejs $nodejsv $normal] \n"
+  end) "$cyan"(prompt_pwd) (begin
+    echo "$normal git:("$normal(git_branch_name)"$normal)"
     git_is_touched; and echo "$yellow⇡⇡"
-  end) " $normal\n $cyan$emoji  "
+  end) " $normal\n $yellow$emoji  "
 end
