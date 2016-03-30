@@ -14,6 +14,6 @@ function recordtv -d "Recordtv function"
     set url "$Recordt_Url$brodcast"
     set filename (eval date '+%Y-%b-%d')
     set rnumb  (eval random )
-    ffmpeg -i $url -c copy $filename-$rnumb.$argv[1]
+    ffmpeg -i $url -c copy -t $argv[2] $filename-$rnumb.$argv[1]
   end
 end
