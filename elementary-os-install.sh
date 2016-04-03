@@ -37,7 +37,7 @@ sudo apt-get -y install heroku-toolbelt ruby libopenssl-ruby ruby1.8-dev libread
 sudo apt-get -y install nutty
 sudo apt-get -y install poedit
 sudo apt-get -y install tmux
-
+sudo apt-get -y install mailutils ssmtp
 ## Apps
 sudo apt-get -y install vagrant
 sudo apt-get -y install sublime-text-installer
@@ -75,3 +75,5 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 ## Nvm other
 
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
+
+npm install -g ngrok
