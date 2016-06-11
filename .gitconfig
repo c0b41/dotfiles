@@ -11,31 +11,20 @@
         untracked = cyan
 [alias]
         pb              = pull
-        p               = pull --rebase origin master
         u               = push origin master
-        dev               = push origin dev
-        ub              = push
-        st              = status
-        ci              = commit
-        co              = checkout
-        br              = branch
+        dev             = push origin dev
+        pu              = push
         lg              = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-        fix             = commit --amend -C HEAD
-        rv              = remote --verbose
-        r               = remote
-        staged          = diff --cached
-        unstage         = reset HEAD
         undo-commit     = reset --soft HEAD^
         reset-c         = reset HEAD^ --hard
-        reset-master    = reset --hard origin/master
-        reset-staging   = reset --hard origin/staging
         tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
         kill-cache      = rm -r --cached .
         psh             = push origin
-	rb	        = branch -r
+				rb	       			= branch -r
         rls             = tag -a
         heroku          = push heroku master
+				es6							= push origin es6
 [github]
-	user = ayhankuru
+	user = c0b41
 [core]
 	editor = vim

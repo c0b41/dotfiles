@@ -38,6 +38,7 @@ sudo apt-get -y install nutty
 sudo apt-get -y install poedit
 sudo apt-get -y install tmux
 sudo apt-get -y install mailutils ssmtp
+sudo apt-get -y install htop
 ## Apps
 sudo apt-get -y install vagrant
 sudo apt-get -y install sublime-text-installer
