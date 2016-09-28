@@ -20,10 +20,11 @@
         tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
         kill-cache      = rm -r --cached .
         psh             = push origin
-				rb	       			= branch -r
+		rb	       		= branch -r
         rls             = tag -a
         heroku          = push heroku master
-				es6							= push origin es6
+		es6				= push origin es6
+		logfiles		= diff --name-only
 [github]
 	user = c0b41
 [core]
