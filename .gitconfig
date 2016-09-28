@@ -10,21 +10,23 @@
         changed = green
         untracked = cyan
 [alias]
-        pb              = pull
-        u               = push origin master
-        dev             = push origin dev
-        pu              = push
-        lg              = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-        undo-commit     = reset --soft HEAD^
-        reset-c         = reset HEAD^ --hard
-        tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
-        kill-cache      = rm -r --cached .
-        psh             = push origin
-		rb	       		= branch -r
-        rls             = tag -a
-        heroku          = push heroku master
-		es6				= push origin es6
-		logfiles		= diff --name-only
+        pb               = pull
+        u                = push origin master
+        dev              = push origin dev
+        pu               = push
+        lg               = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        undo-commit      = reset --soft HEAD^
+        reset-c          = reset HEAD^ --hard
+        tree             = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
+        kill-cache       = rm -r --cached .
+        psh              = push origin
+		rb	       		 = branch -r
+        rls              = tag -a
+        heroku           = push heroku master
+		es6				 = push origin es6
+		logfiles		 = diff --name-only
+		assume-unchanged = update-index --assume-unchanged
+		assume-changed   = update-index --no-assume-unchanged
 [github]
 	user = c0b41
 [core]
