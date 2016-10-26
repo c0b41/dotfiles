@@ -20,13 +20,14 @@
         tree             = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
         kill-cache       = rm -r --cached .
         psh              = push origin
-		rb	       		 = branch -r
+				rb	       		 	 = branch -r
         rls              = tag -a
         heroku           = push heroku master
-		es6				 = push origin es6
-		logfiles		 = diff --name-only
-		assume-unchanged = update-index --assume-unchanged
-		assume-changed   = update-index --no-assume-unchanged
+				es6				 			 = push origin es6
+				logfiles				 = diff --name-only
+				assume-unchanged = update-index --assume-unchanged
+				assume-changed   = update-index --no-assume-unchanged
+				revert-m				 = revert --no-commit # HEAD~2..HEAD
 [github]
 	user = c0b41
 [core]
