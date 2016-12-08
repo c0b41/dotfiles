@@ -27,6 +27,7 @@
         logfiles	 = diff --name-only
         assume-unchanged = update-index --assume-unchanged
         assume-changed   = update-index --no-assume-unchanged
+        revert-m	 = revert --no-commit # HEAD~2..HEAD
         devs             = shortlog -sn
 [github]
 	user = c0b41
