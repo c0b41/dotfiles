@@ -1,0 +1,3 @@
+[submodule "my-dockerfiles"]
+	path = my-dockerfiles
+	url = git@github.com:c0b41/my-dockerfiles.git
