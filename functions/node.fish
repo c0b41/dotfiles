@@ -1,0 +1,1 @@
+/home/cobaimelan/.config/fisherman/nvm/node.fish

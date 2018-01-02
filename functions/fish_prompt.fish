@@ -1,0 +1,1 @@
+/home/cobaimelan/.config/fisherman/fscoiety/fish_prompt.fish

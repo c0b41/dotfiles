@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.tpl": "php"
+    },
+    "extensions.ignoreRecommendations": false,
+    "typescript.check.npmIsInstalled": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": true
+    }
+}
